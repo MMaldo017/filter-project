@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./filter.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap"
+    rel="stylesheet"
+  />
+  <title>Filter Project – Advanced with Cart</title>
+</head>
+<body>
+  <div class="container">
+    <!-- LEFT MENU -->
+    <aside class="leftMenu">
+      <input type="text" placeholder="Search..." class="search" />
+
+      <h2>Categories</h2>
+      <div class="cats"></div>
+
+      <h2>Max Prices</h2>
+      <div class="price">
+        <input type="range" class="priceRange" />
+        <span class="priceValue">$45</span>
+      </div>
+
+      <h2>Sort By</h2>
+      <select id="sortSelect">
+        <option value="none">-- Select --</option>
+        <option value="low-high">Price: Low to High</option>
+        <option value="high-low">Price: High to Low</option>
+      </select>
+
+      <button id="resetBtn">Reset Filters</button>
+    </aside>
+
+    <!-- MAIN PRODUCTS -->
+    <main class="content">
+      <h3 class="stats"></h3>
+      <div class="products"></div>
+    </main>
+
+    <!-- RIGHT CART SIDEBAR -->
+    <aside class="rightMenu">
+      <h2>🛒 Your Cart</h2>
+      <ul class="cartItems"></ul>
+      <p class="cartTotal">Total: $0</p>
+      <button id="clearCartBtn">Clear Cart</button>
+    </aside>
+  </div>
+
+  <script src="./filter.js"></script>
+</body>
+</html>
+
